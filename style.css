@@ -1,0 +1,434 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+#hero-section-outer {
+background-color: #f0f0f0;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+#main-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 20px 150px;
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+#left-section {
+  flex: 1;
+  padding-right: 40px;
+}
+
+#left-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: black;
+}
+
+#left-section p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+#cta-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.cta-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #26a9e0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+#right-section {
+  flex: 1;
+  text-align: center;
+}
+
+#right-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+      .main-inner {
+    padding: 0px;
+  }
+  #business-intro-content h2 {
+  color: black;
+  font-size: 28px;
+  padding-top: 0px;
+}
+#business-intro-section {
+  background-color: #fff;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0;
+  margin: 0;
+}
+
+#business-intro-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 150px 20px 150px;
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+#business-intro-image {
+  flex: 1;
+  text-align: center;
+}
+
+#business-intro-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+#business-intro-content {
+  flex: 1;
+  padding-left: 40px;
+}
+
+#business-intro-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: black;
+}
+
+#business-intro-content p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+#seo-services-section {
+    background-color: #ededed;
+    padding: 60px 0;
+    text-align: center;
+    width: 100vw;
+    position: relative;
+    box-sizing: border-box;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#inner-service-section {
+  max-width: 1200px; /* Limits content width */
+  margin: 0 auto; /* Centers content */
+  padding: 0 20px; /* Adds some padding for smaller screens */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center services */
+  gap: 20px;
+}
+
+#seo-services-section .seo-service {
+  width: calc(33.33% - 20px); /* Three services per row with gaps */
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  display: inline-block; /* Display services inline */
+  vertical-align: top; /* Align services to the top */
+}
+
+#seo-services-section .seo-service img {
+  max-width: 150px; /* Limit image size */
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#seo-services-section .seo-service h3 {
+  font-size: 1.5rem;
+  color: #333; /* Dark text for better contrast on white background */
+  margin-bottom: 15px;
+}
+
+#seo-services-section .seo-service p {
+  font-size: 1rem;
+  color: #666; /* Gray text for better readability */
+  line-height: 1.6;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 1024px) {
+  #seo-services-section .seo-service {
+    width: calc(50% - 20px); /* Two services per row on tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  #seo-services-section .seo-service {
+    width: 100%; /* One service per row on mobile */
+  }
+}
+
+#testimonial-section {
+  background-color: #fff;
+  padding: 60px 0;
+  text-align: center;
+  width: 100%; /* Full viewport width */
+  position: relative;
+  box-sizing: border-box; /* Ensures padding doesn't add to width */
+}
+
+#testimonial-section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.testimonials-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px; /* Limit the width of the testimonials container */
+  margin: 0 auto; /* Center the container */
+  padding: 0 20px; /* Add some padding for smaller screens */
+}
+
+.testimonial {
+  width: 30%;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+}
+
+.testimonial .rating {
+  font-size: 1.5rem;
+  color: #ffcc00;
+  margin-bottom: 15px;
+}
+
+.testimonial p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.client-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.client-info img {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.client-name {
+  font-size: 1rem;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .testimonial {
+    width: 100%; /* Full width on smaller screens */
+    margin-bottom: 20px;
+  }
+}
+div#Inner-SEO-points {
+    display: flex;
+}
+#seo-importance-outer {
+  width: 100%;
+  background-color: #fff;
+  padding: 60px 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+#seo-importance-section {
+  max-width: 1200px; /* Limits width to prevent excessive stretching */
+  margin: 0 auto; /* Centers content */
+  padding: 0 20px; /* Adds padding for small screens */
+}
+
+#seo-importance-h2 {
+  
+}
+
+#seo-importance-h2 h2 {
+  color: black;
+  font-size: 28px;
+}
+
+#seo-importance-section .seo-point {
+  display: inline-block;
+  width: calc(25% - 30px); /* Ensures four columns with space */
+  margin: 15px;
+  vertical-align: top;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+#seo-importance-section .icon {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#seo-importance-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+#seo-importance-section p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  #seo-importance-section .seo-point {
+    width: calc(50% - 30px); /* Two per row on tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  #seo-importance-section .seo-point {
+    width: 100%; /* One per row on mobile */
+  }
+}
+    /* Global Styling */
+    #faq-section {
+      background-color: #fff;
+      width: 100vw;
+      position: relative;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+    }
+
+    #faq-container {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 50px 20px 150px;
+      width: 100%;
+      max-width: 1200px;
+      box-sizing: border-box;
+      margin: 0 auto;
+    }
+
+    /* FAQ Container Styling */
+    .faq-container {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid #ddd;
+      padding: 15px 0;
+    }
+
+    .faq-question {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .faq-question::after {
+      content: '\25BC'; /* Unicode for ▼ (downward arrow) */
+      font-size: 12px;
+      transition: transform 0.3s ease;
+    }
+
+    .faq-question.open::after {
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      margin-top: 10px;
+      font-size: 16px;
+      color: #555;
+      line-height: 1.6;
+    }
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+#outer-bottom-CTA {
+background-color: #26a9e0;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+#main-bottom-CTA {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 20px 100px;
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  flex-direction: column;
+}
+#CTA-paragraph {
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+}
+  #main-bottom-CTA h2 {
+  color: #fff;
+  font-size: 28px;
+  padding-top: 0px;
+}
+  
+
+
+
+
+
